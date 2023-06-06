@@ -1,10 +1,10 @@
-DROP TABLE school;
+ï»¿DROP TABLE school;
 CREATE TABLE school ( id bigint NOT NULL AUTO_INCREMENT, name varchar(64), address varchar(256), createTime datetime, updateTime datetime, PRIMARY KEY (id) ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-insert into school (id, name, address, createTime, updateTime) values (1, '±±¾©´óÑ§', '±±¾©ÊÐº£µíÇøÒÃºÍÔ°Â·5ºÅ', '2019-10-18 13:35:57', '2019-10-18 13:35:57');
-insert into school (id, name, address, createTime, updateTime) values (2, 'ÄÏ¿ª´óÑ§', 'ÖÐ¹úÌì½òÊÐÄÏ¿ªÇøÎÀ½òÂ·94ºÅ', '2019-10-18 13:35:57', '2019-10-18 13:35:57');
-insert into school (id, name, address, createTime, updateTime) values (3, 'Í¬¼Ã´óÑ§', 'ÉÏº£ÊÐÕÃÎäÂ·1ºÅÍ¬¼Ã´óÏÃAÂ¥7Â¥7Çø', '2019-10-18 13:35:57', '2019-10-18 13:35:57');
+insert into school (id, name, address, createTime, updateTime) values (1, 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãºï¿½Ô°Â·5ï¿½ï¿½', '2019-10-18 13:35:57', '2019-10-18 13:35:57');
+insert into school (id, name, address, createTime, updateTime) values (2, 'ï¿½Ï¿ï¿½ï¿½ï¿½Ñ§', 'ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·94ï¿½ï¿½', '2019-10-18 13:35:57', '2019-10-18 13:35:57');
+insert into school (id, name, address, createTime, updateTime) values (3, 'Í¬ï¿½Ã´ï¿½Ñ§', 'ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·1ï¿½ï¿½Í¬ï¿½Ã´ï¿½ï¿½ï¿½AÂ¥7Â¥7ï¿½ï¿½', '2019-10-18 13:35:57', '2019-10-18 13:35:57');
 DROP TABLE user;
 CREATE TABLE user ( id bigint(11) NOT NULL AUTO_INCREMENT, name varchar(32), age int(4), address varchar(128), entryTime datetime, remark varchar(64), createTime datetime, updateTime datetime, status int(4) DEFAULT '0', dateTime varchar(64), PRIMARY KEY (id), INDEX idx_name (name) ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-insert into user (id, name, age, address, entryTime, remark, createTime, updateTime, status, dateTime) values (1, 'Ë®Ë®', 18, '¼ªÁÖÊ¡ÓÜÊ÷ÊÐºÚÁÖÕòÒü¼Ò´å5×é', '2019-12-22 00:00:00', 'ÎÞ', '2019-12-22 00:00:00', '2019-12-22 00:00:00', 0, '20200309');
-insert into user (id, name, age, address, entryTime, remark, createTime, updateTime, status, dateTime) values (2, '¶¹¶¹', 18, 'ÁÉÄþÊ¡´óÁ¬ÊÐÇåºÓÍåË¾ÂíµÀ407Â·', '2019-12-22 00:00:00', 'ÎÞ', '2019-12-22 00:00:00', '2019-12-22 00:00:00', 1, null);
-insert into user (id, name, age, address, entryTime, remark, createTime, updateTime, status, dateTime) values (3, '»¨»¨', 19, 'ÁÉÄþÊ¡´óÁ¬ÊÐÇåºÓÍåË¾ÂíµÀ407Â·', '2019-12-22 00:00:00', 'ÎÞ', '2019-12-22 00:00:00', '2019-12-22 00:00:00', 0, '20200310');
+insert into user (id, name, age, address, entryTime, remark, createTime, updateTime, status, dateTime) values (1, 'Ë®Ë®', 18, 'ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò´ï¿½5ï¿½ï¿½', '2019-12-22 00:00:00', 'ï¿½ï¿½', '2019-12-22 00:00:00', '2019-12-22 00:00:00', 0, '20200309');
+insert into user (id, name, age, address, entryTime, remark, createTime, updateTime, status, dateTime) values (2, 'ï¿½ï¿½ï¿½ï¿½', 18, 'ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¾ï¿½ï¿½ï¿½407Â·', '2019-12-22 00:00:00', 'ï¿½ï¿½', '2019-12-22 00:00:00', '2019-12-22 00:00:00', 1, null);
+insert into user (id, name, age, address, entryTime, remark, createTime, updateTime, status, dateTime) values (3, 'ï¿½ï¿½ï¿½ï¿½', 19, 'ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¾ï¿½ï¿½ï¿½407Â·', '2019-12-22 00:00:00', 'ï¿½ï¿½', '2019-12-22 00:00:00', '2019-12-22 00:00:00', 0, '20200310');

@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 public class ApiTest {
 
-    private Logger logger = LoggerFactory.getLogger(ApiTest.class);
+    private final Logger logger = LoggerFactory.getLogger(ApiTest.class);
 
     @Test
     public void test_Editing2Arraignment() {

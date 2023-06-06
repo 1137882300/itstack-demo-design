@@ -6,7 +6,7 @@ import org.itstack.demo.design.event.listener.MessageEventListener;
 
 public abstract class LotteryService {
 
-    private EventManager eventManager;
+    private final EventManager eventManager;
 
     public LotteryService() {
         eventManager = new EventManager(EventManager.EventType.MQ, EventManager.EventType.Message);

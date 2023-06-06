@@ -12,6 +12,7 @@ public class EventManager {
 
     Map<Enum<EventType>, List<EventListener>> listeners = new HashMap<>();
 
+    @SafeVarargs
     public EventManager(Enum<EventType>... operations) {
         for (Enum<EventType> operation : operations) {
             this.listeners.put(operation, new ArrayList<>());

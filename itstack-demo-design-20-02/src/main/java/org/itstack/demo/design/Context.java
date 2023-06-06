@@ -8,7 +8,11 @@ import java.math.BigDecimal;
  * Create by 小傅哥(fustack) @2020
  */
 public class Context<T> {
-
+/**
+ * @author juzi
+ * @date 2023/6/6 下午 4:41
+ * @description TODO:策略控制类
+ */
     private ICouponDiscount<T> couponDiscount;
 
     public Context(ICouponDiscount<T> couponDiscount) {

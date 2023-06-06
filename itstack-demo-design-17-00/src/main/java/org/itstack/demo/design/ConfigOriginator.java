@@ -1,5 +1,9 @@
 package org.itstack.demo.design;
-
+/**
+ * @author juzi
+ * @date 2023/6/6 下午 3:24
+ * @description 记录者
+ */
 public class ConfigOriginator {
 
     private ConfigFile configFile;
