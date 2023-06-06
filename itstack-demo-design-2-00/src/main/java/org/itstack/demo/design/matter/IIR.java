@@ -6,7 +6,11 @@ import org.slf4j.LoggerFactory;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
-
+/**
+ * @author juzi
+ * @date 2023/5/31 下午 4:46
+ * @description redis 集群 IIR
+ */
 public class IIR {
 
     private Logger logger = LoggerFactory.getLogger(IIR.class);

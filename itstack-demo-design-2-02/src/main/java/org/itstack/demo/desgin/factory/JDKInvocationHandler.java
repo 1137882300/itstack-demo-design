@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 
 public class JDKInvocationHandler implements InvocationHandler {
 
-    private ICacheAdapter cacheAdapter;
+    private final ICacheAdapter cacheAdapter;
 
     public JDKInvocationHandler(ICacheAdapter cacheAdapter) {
         this.cacheAdapter = cacheAdapter;

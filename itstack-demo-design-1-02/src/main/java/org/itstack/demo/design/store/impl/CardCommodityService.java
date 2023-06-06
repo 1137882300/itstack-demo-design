@@ -10,10 +10,10 @@ import java.util.Map;
 
 public class CardCommodityService implements ICommodity {
 
-    private Logger logger = LoggerFactory.getLogger(CardCommodityService.class);
+    private final Logger logger = LoggerFactory.getLogger(CardCommodityService.class);
 
     // 模拟注入
-    private IQiYiCardService iQiYiCardService = new IQiYiCardService();
+    private final IQiYiCardService iQiYiCardService = new IQiYiCardService();
 
     public void sendCommodity(String uId, String commodityId, String bizId, Map<String, String> extMap) throws Exception {
         String mobile = queryUserMobile(uId);

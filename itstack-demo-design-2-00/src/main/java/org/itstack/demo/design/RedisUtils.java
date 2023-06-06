@@ -9,9 +9,9 @@ import java.util.concurrent.TimeUnit;
 
 public class RedisUtils {
 
-    private Logger logger = LoggerFactory.getLogger(RedisUtils.class);
+    private final Logger logger = LoggerFactory.getLogger(RedisUtils.class);
 
-    private Map<String, String> dataMap = new ConcurrentHashMap<String, String>();
+    private final Map<String, String> dataMap = new ConcurrentHashMap<>();
 
     public String get(String key) {
         logger.info("Redis获取数据 key：{}", key);

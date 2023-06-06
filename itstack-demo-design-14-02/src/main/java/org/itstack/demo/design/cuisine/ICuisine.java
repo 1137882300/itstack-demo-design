@@ -17,6 +17,7 @@ package org.itstack.demo.design.cuisine;
  */
 public interface ICuisine {
 
+    //菜品
     void cook(); // 烹调、制作
 
 }

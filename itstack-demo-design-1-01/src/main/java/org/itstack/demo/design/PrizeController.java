@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
  */
 public class PrizeController {
 
-    private Logger logger = LoggerFactory.getLogger(PrizeController.class);
+    private final Logger logger = LoggerFactory.getLogger(PrizeController.class);
 
     public AwardRes awardToUser(AwardReq req) {
         String reqJson = JSON.toJSONString(req);

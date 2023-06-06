@@ -9,6 +9,7 @@ import org.itstack.demo.design.tile.DongPengTile;
 import org.itstack.demo.design.tile.MarcoPoloTile;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,7 +73,7 @@ public class DecorationPackageController {
         StringBuilder detail = new StringBuilder("\r\n-------------------------------------------------------\r\n" +
                 "装修清单" + "\r\n" +
                 "套餐等级：" + level + "\r\n" +
-                "套餐价格：" + price.setScale(2, BigDecimal.ROUND_HALF_UP) + " 元\r\n" +
+                "套餐价格：" + price.setScale(2, RoundingMode.HALF_UP) + " 元\r\n" +
                 "房屋面积：" + area.doubleValue() + " 平米\r\n" +
                 "材料清单：\r\n");
 

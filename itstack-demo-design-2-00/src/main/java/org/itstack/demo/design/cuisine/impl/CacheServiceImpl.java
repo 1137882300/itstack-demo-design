@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CacheServiceImpl implements CacheService {
 
-    private RedisUtils redisUtils = new RedisUtils();
+    private final RedisUtils redisUtils = new RedisUtils();
 
     public String get(String key) {
         return redisUtils.get(key);

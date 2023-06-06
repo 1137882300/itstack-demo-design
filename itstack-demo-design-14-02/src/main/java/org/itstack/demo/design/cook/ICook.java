@@ -6,7 +6,7 @@ package org.itstack.demo.design.cook;
  * Create by 小傅哥(fustack) @2020
  */
 public interface ICook {
-
+    //厨师
     void doCooking();
 
 }
